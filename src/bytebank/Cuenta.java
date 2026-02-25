@@ -17,6 +17,16 @@ public class Cuenta {
         Cuenta.total ++;
     }
 
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "saldo=" + saldo +
+                ", agencia=" + agencia +
+                ", numero=" + numero +
+                ", titular=" + titular +
+                '}';
+    }
+
     public void deposita(double valor) {
         this.saldo = this.saldo + valor;
     }

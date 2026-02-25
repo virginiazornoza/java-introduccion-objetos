@@ -6,6 +6,10 @@ public class Cliente {
     private String documento;
     private String telefono;
 
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -30,3 +34,4 @@ public class Cliente {
         this.telefono = telefono;
     }
 }
+//Antes sería public String nombre; ahora pasa a ser privado, y get y set públicos
