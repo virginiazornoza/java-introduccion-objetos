@@ -40,6 +40,12 @@ public class Cuenta {
         }
     }
 
+    /**
+     *
+     * @param valor
+     * @param destino
+     * @return
+     */
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
             this.saldo -= valor;

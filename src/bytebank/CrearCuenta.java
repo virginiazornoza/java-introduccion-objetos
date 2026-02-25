@@ -1,5 +1,10 @@
 package bytebank;
 
+/**
+ * Clase CrearCuenta
+ * @author
+ * @version
+ */
 public class CrearCuenta {
 
     public static void main(String[] args) {
