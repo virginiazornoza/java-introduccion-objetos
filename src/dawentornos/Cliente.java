@@ -1,4 +1,4 @@
-package bytebank;
+package dawentornos;
 
 public class Cliente {
 
@@ -7,16 +7,10 @@ public class Cliente {
     private String telefono;
 
     public Cliente(String nombre) {
-        this.nombre = nombre;
+        this.setNombre(nombre);
     }
 
-    public String getNombre() {
-        return nombre;
-    }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public String getDocumento() {
         return documento;
@@ -32,6 +26,14 @@ public class Cliente {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }
 //Antes sería public String nombre; ahora pasa a ser privado, y get y set públicos

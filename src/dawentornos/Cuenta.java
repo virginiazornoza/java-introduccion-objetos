@@ -1,8 +1,13 @@
-package bytebank;
+package dawentornos;
 
 public class Cuenta {
 
     private double saldo;
+
+    public Cuenta(int agencia) {
+        this.agencia = agencia;
+    }
+
     private int agencia = 1;
     private int numero;
     private Cliente titular = new Cliente();
@@ -40,12 +45,16 @@ public class Cuenta {
         }
     }
 
-    /**
-     *
-     * @param valor
-     * @param destino
-     * @return
-     */
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "saldo=" + saldo +
+                ", agencia=" + agencia +
+                ", numero=" + numero +
+                ", titular=" + titular +
+                '}';
+    }
+
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
