@@ -1,6 +1,13 @@
-package bytebank;
+package dawentornos;
 
 public class Cuenta {
+    public Cuenta(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public Cuenta(int agencia) {
+        this.agencia = agencia;
+    }
 
     private double saldo;
     private int agencia = 1;
