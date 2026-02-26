@@ -1,5 +1,11 @@
 package dawentornos;
 
+/**
+ * Descripción de la clase
+ * @author Virginia
+ * @version 1.1
+ */
+
 public class Cuenta {
 
     private double saldo;
@@ -22,15 +28,6 @@ public class Cuenta {
         Cuenta.total ++;
     }
 
-    @Override
-    public String toString() {
-        return "Cuenta{" +
-                "saldo=" + saldo +
-                ", agencia=" + agencia +
-                ", numero=" + numero +
-                ", titular=" + titular +
-                '}';
-    }
 
     public void deposita(double valor) {
         this.saldo = this.saldo + valor;
@@ -55,6 +52,12 @@ public class Cuenta {
                 '}';
     }
 
+    /**
+     * Descripción del método tranfiere ...
+     * @param valor {double} sirve para ...
+     * @param destino {Cuenta} sirve para...
+     * @return {boolean} devuelve si el valor dado por parámetro es mayor o igual que el saldo
+     */
     public boolean transfiere(double valor, Cuenta destino) {
         if(this.saldo >= valor) {
             this.saldo -= valor;
