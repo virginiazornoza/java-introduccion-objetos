@@ -16,6 +16,11 @@ public class Cuenta {
 
     private static int total;
 
+    /**
+     * Descripción del método Cuenta
+     * @param agencia {int} especifica la agencia
+     * @param numero {int} especifica el numero de cuenta
+     */
     public Cuenta( int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
@@ -38,6 +43,11 @@ public class Cuenta {
         this.saldo = this.saldo + valor;
     }
 
+    /**
+     * Descripción del método
+     * @param valor {double} valor a comprobar si es mayor que el saldo
+     * @return {boolean} devuelve si el valor sale o entra de la cuenta
+     */
     public boolean saca(double valor) {
         if(this.saldo >= valor) {
             this.saldo -= valor;

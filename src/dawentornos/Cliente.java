@@ -1,5 +1,10 @@
 package dawentornos;
 
+/**
+ * Descripción de la clase Cliente
+ * @author Virginia
+ * @version 1.1
+ */
 public class Cliente {
 
    private String nombre;
